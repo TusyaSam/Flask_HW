@@ -14,9 +14,9 @@ def clothing():
 def shoes():
     return render_template('shoes.html')
 
-@app.route('/jacket')
+@app.route('/jackets')
 def jacket():
-    return render_template('jacket.html')
+    return render_template('jackets.html')
 
 if __name__ == '__main__':
     app.run()
