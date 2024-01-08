@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Flask_HW/static/css/style.css" />
+    <title>base</title>
+
+    <body>
+        <nav class="center">
+            <div class="logo__box">
+                <a href="#">
+                    <img class="head__logo" src="/Flask_HW/static/image/logo.png" alt="header image" />
+                </a>
+            </div>
+            <div class="menu__box">
+                <a class="menu__link" href="#">
+                    <p>Home</p>
+                </a>
+                <a class="menu__link" href="#">
+                    <p>About Us</p>
+                </a>
+                <a class="menu__link" href="#">
+                    <p>Services</p>
+                </a>
+                <a class="menu__link special__link" href="#">
+                    <p>Features</p>
+                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="#">
+            <path
+              d="M1 1L4 4L7 1"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+                </a>
+                <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\index.html">
+                    <p>index</p>
+                </a>
+                <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\clothing.html">
+                    <p>clothing</p>
+                </a>
+                <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\jackets.html">
+                    <p>jackets</p>
+                </a>
+                <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\shoes.html">
+                    <p>shoes</p>
+                </a>
+
+            </div>
+        </nav>
+        {% block content %} {% endblock %}
+    </body>
+
+</html>
