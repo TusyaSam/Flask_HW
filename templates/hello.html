@@ -2,30 +2,8 @@
 
 <body>
   <h1>Добро пожаловать, {{name}}!</h1>
-  <button onclick="logout()">Выйти</button>
-
-  <script>
-    // Получение значения cookie с именем пользователя
-    var username = getCookie("name");
-    document.getElementById("username").innerText = username;
-
-    // Удаление cookie-файла и перенаправление на страницу ввода имени и электронной почты
-    function logout() {
-      document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-      window.location.href = "/";
-    }
-
-    // Функция для получения значения cookie по имени
-    function getCookie(name) {
-      var cookies = document.cookie.split("; ");
-      for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i].split("=");
-        if (cookie[0] === name) {
-          return cookie[1];
-        }
-      }
-      return "";
-    }
-  </script>
+  <form method="post">
+    <button type="submit">Выйти</button>
+  </form>
 </body>
 {% endblock %}
