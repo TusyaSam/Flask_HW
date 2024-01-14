@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+
+<body>
+  <form method="post">
+    <label for="name">Введите имя и e-mail:</label>
+    <input type="text" id="username" name="name" placeholder="Имя" required />
+    <input type="email" id="email" name="email" placeholder="e-mail" required />
+    <button type="sumbit">Отправить</button>
+  </form>
+</body>
+{% endblock %}
