@@ -5,23 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>base</title>
+    <title>
+        {% block title %} Главная страница {% endblock %}
+    </title>
 
     <body>
         <nav class="center">
 
             </a>
             <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\index.html">
-                <p>index</p>
+                <p>Главная</p>
             </a>
-            <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\clothing.html">
-                <p>clothing</p>
+            <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\users.html">
+                <p>Пользователи</p>
             </a>
-            <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\jackets.html">
-                <p>jackets</p>
+            <a class="menu__link" href="#">
+                <p>3я страница</p>
             </a>
-            <a class="menu__link" href="D:\обучение\Урок 3. Языки программирования\Python\Flask\Flask_HW\templates\shoes.html">
-                <p>shoes</p>
+            <a class="menu__link" href="#">
+                <p>4я страница</p>
             </a>
 
 
